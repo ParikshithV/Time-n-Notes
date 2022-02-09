@@ -1,38 +1,79 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Glory&display=swap');
+
+body {
   text-align: center;
+  font-size: large;
+  font-family: 'Gayathri', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  width: 100%;
+  mix-blend-mode: screen;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bubbles {
+  min-height: 35px;
+  min-width: 80%;
+  max-width: 90%;
+  background-color: rgb(124, 188, 245);
+  border: 0;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  font-size: larger;
+  font-size: xx-large;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bubbles:hover {
+  background-color: rgb(233, 130, 112);
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  position: absolute;
+  top: 0;
+  padding-left: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#notecontainer {
+  width: 50%;
+  height: 550px;
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+#addnote {
+  border: 0;
+  border-radius: 0px;
+  border-bottom: 2px solid rgb(202, 202, 202);
+  width: 60%;
+  height: 25px;
+  padding-left: 10px;
+  margin: 10px;
+  font-size: 24px;
+}
+
+#addbtn {
+  background-color: rgb(242, 215, 255);
+  border: 0;
+  border-radius: 115px;
+  width: 80px;
+  height: 30px;
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 2px rgb(77, 77, 77);
+}
+
+#addbtn:active {
+  box-shadow: 1px 1px 0.2px rgb(199, 199, 199);
+  transform: translateY(1px);
+}
+
+nav {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+time {
+  font-size: 8em;
 }

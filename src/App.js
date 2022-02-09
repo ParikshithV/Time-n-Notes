@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+// import Ytembd from './Ytembd.js'
+import Notes from './Notes';
+import Time from './Time';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <head>
+        <meta name="viewport" content="width=device-width" />
+      </head>
+      <body>
+        <nav>hello</nav>
+        <Time/>
+        <Notes/>
+      </body> 
     </div>
   );
 }
