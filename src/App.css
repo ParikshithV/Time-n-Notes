@@ -12,6 +12,7 @@ table {
 }
 
 .bubbles {
+  height: auto;
   min-height: 35px;
   min-width: 80%;
   max-width: 90%;
@@ -27,6 +28,10 @@ table {
   background-color: rgb(233, 130, 112);
 }
 
+.bubbles:active {
+  background-color: rgb(233, 130, 112);
+}
+
 h3 {
   position: absolute;
   top: 0;
@@ -35,8 +40,8 @@ h3 {
 
 
 #notecontainer {
-  width: 50%;
-  height: 550px;
+  width: 80%;
+  height: 350px;
   max-width: 800px;
   margin: auto;
   padding: 10px;

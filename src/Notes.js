@@ -25,16 +25,18 @@ function Notes() {
     return (
         <div id="notecontainer">
             
-            <Scrollbars>
-                {notes.map(noteText => <div><button className="bubbles"
-                onClick={t => remNote(t.target.value)}
-                value={noteText}>{noteText}</button></div>)}
-            </Scrollbars>
             <form>
                 <input type="text" id="addnote" placeholder="Add note"
                     onChange={e => setText(e.target.value)} required></input>
                 <input type="button" id="addbtn" onClick={addNote} value="Add" />
             </form>
+
+            <Scrollbars>
+                {notes.map(noteText => <div><button className="bubbles"
+                onClick={t => remNote(t.target.value)}
+                value={noteText}>{noteText}</button></div>)}
+            </Scrollbars>
+
             <ToastContainer 
             position="bottom-center"
             autoClose={2000}
