@@ -82,3 +82,12 @@ nav {
 time {
   font-size: 8em;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
