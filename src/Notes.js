@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Scrollbars } from 'react-custom-scrollbars-2';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,7 +8,7 @@ function Notes() {
     const [info, setInfo] = useState('');
 
     function addNote() {
-        if(text!=''){
+        if(text!==''){
             setNotes([...notes, text]);
             setInfo('Select note to remove from list')
             setInterval(() => {
