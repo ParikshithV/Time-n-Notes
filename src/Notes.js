@@ -7,6 +7,7 @@ function Notes() {
   const [notes, setNotes] = useState([]);
   const [info, setInfo] = useState("");
 
+
   function addNote() {
     if (text !== "") {
       setNotes([...notes, text]);
